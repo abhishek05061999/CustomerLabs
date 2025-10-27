@@ -26,67 +26,10 @@ The application includes the following predefined schema options:
 - City (city)
 - State (state)
 
-## Data Format
 
-When saving a segment, the application sends data in the following JSON format:
 
-```json
-{
-  "segment_name": "your_segment_name",
-  "schema": [
-    {"first_name": "First Name"},
-    {"last_name": "Last Name"}
-  ]
-}
-```
+The application will open  https://customer-labs-two.vercel.app/.
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (version 14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone or download the project
-2. Navigate to the project directory
-3. Install dependencies:
-
-```bash
-npm install
-```
-
-### Running the Application
-
-Start the development server:
-
-```bash
-npm start
-```
-
-The application will open in your browser at `http://localhost:3000`.
-
-### Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── SegmentModal.js      # Modal component for segment creation
-│   └── SegmentModal.css     # Styles for the modal
-├── App.js                   # Main application component
-├── App.css                  # Main application styles
-├── index.js                 # Application entry point
-└── index.css                # Global styles
-```
 
 ## Usage
 
@@ -97,16 +40,6 @@ src/
 5. Click "Save the Segment" to save your segment
 6. The data will be logged to the console and displayed in an alert
 
-## Customization
-
-To add more schema options, modify the `schemaOptions` array in `src/components/SegmentModal.js`:
-
-```javascript
-const schemaOptions = [
-  { value: 'your_value', label: 'Your Label' },
-  // ... existing options
-];
-```
 
 ## Technologies Used
 
